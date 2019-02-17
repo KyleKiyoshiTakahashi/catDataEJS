@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EJS CATS</title>
+</head>
+<body>
+	<h1>EJS CATS WITH HATS</h1>
+	<% for(var i=0; i< cats.length; i++){ %>
+		
+	<a href="/<%= cats[i].name %>"><img src="<%= cats[i].image %>"></a>
+		
+	<% } %>
+</body>
+</html>

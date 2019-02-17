@@ -1,0 +1,14 @@
+<html>
+<body>
+<h1>DETAILS</h1>
+<% for (var i=0; i < cat.length; i++){ %>
+	<h1>Details Page For <%= cat[i].name %></h1>
+		<img src="<%= cat[i].image %>">
+		<p>Favorite Food: <%= cat[i].favorite_food %></p>
+		<p>Age: <%= cat[i].age %></p>
+		<% for(var j in cat){ %>
+		<p>Sleeping Spots: <%= cat[i].sleeping_spots %> </p>
+		<% } %>
+<% } %>
+</body>
+</html>
